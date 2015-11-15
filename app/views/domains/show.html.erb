@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id:</strong>
+  <%= @domain.id %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @domain.name %>
+</p>
+
+<p>
+  <strong>Courtlocation:</strong>
+  <%= @domain.courtLocation_id %>
+</p>
+
+<p>
+  <strong>Courtlevel:</strong>
+  <%= @domain.courtLevel %>
+</p>
+
+<p>
+  <strong>Courttype:</strong>
+  <%= @domain.courtType %>
+</p>
+
+<p>
+  <strong>Palacelevel:</strong>
+  <%= @domain.palaceLevel %>
+</p>
+
+<p>
+  <strong>Treasury:</strong>
+  <%= @domain.treasury %>
+</p>
+
+<%= link_to 'Edit', edit_domain_path(@domain) %> |
+<%= link_to 'Back', domains_path %>

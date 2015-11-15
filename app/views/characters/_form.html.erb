@@ -1,0 +1,109 @@
+<%= form_for(@character) do |f| %>
+  <% if @character.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@character.errors.count, "error") %> prohibited this character from being saved:</h2>
+
+      <ul>
+      <% @character.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :id %><br>
+    <%= f.number_field :id %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :abbrevation %><br>
+    <%= f.text_field :abbrevation %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :reputation %><br>
+    <%= f.text_field :reputation %>
+  </div>
+  <div class="field">
+    <%= f.label :alignment %><br>
+    <%= f.text_field :alignment %>
+  </div>
+  <div class="field">
+    <%= f.label :level_total %><br>
+    <%= f.number_field :level_total %>
+  </div>
+  <div class="field">
+    <%= f.label :hpmax %><br>
+    <%= f.number_field :hpmax %>
+  </div>
+  <div class="field">
+    <%= f.label :hpcurrent %><br>
+    <%= f.number_field :hpcurrent %>
+  </div>
+  <div class="field">
+    <%= f.label :strength %><br>
+    <%= f.number_field :strength %>
+  </div>
+  <div class="field">
+    <%= f.label :dexterity %><br>
+    <%= f.number_field :dexterity %>
+  </div>
+  <div class="field">
+    <%= f.label :constitution %><br>
+    <%= f.number_field :constitution %>
+  </div>
+  <div class="field">
+    <%= f.label :intelligence %><br>
+    <%= f.number_field :intelligence %>
+  </div>
+  <div class="field">
+    <%= f.label :wisdom %><br>
+    <%= f.number_field :wisdom %>
+  </div>
+  <div class="field">
+    <%= f.label :charisma %><br>
+    <%= f.number_field :charisma %>
+  </div>
+  <div class="field">
+    <%= f.label :blood_deriviation_id %><br>
+    <%= f.number_field :blood_deriviation_id %>
+  </div>
+  <div class="field">
+    <%= f.label :blood_strength %><br>
+    <%= f.number_field :blood_strength %>
+  </div>
+  <div class="field">
+    <%= f.label :blood_score %><br>
+    <%= f.number_field :blood_score %>
+  </div>
+  <div class="field">
+    <%= f.label :location_id %><br>
+    <%= f.number_field :location_id %>
+  </div>
+  <div class="field">
+    <%= f.label :trainedThisRound %><br>
+    <%= f.check_box :trainedThisRound %>
+  </div>
+  <div class="field">
+    <%= f.label :isALieutenant %><br>
+    <%= f.check_box :isALieutenant %>
+  </div>
+  <div class="field">
+    <%= f.label :isAllowed %><br>
+    <%= f.check_box :isAllowed %>
+  </div>
+  <div class="field">
+    <%= f.label :roundsCarriedMaxRP %><br>
+    <%= f.number_field :roundsCarriedMaxRP %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

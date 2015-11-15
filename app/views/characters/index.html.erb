@@ -1,0 +1,71 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Characters</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Abbrevation</th>
+      <th>Description</th>
+      <th>Reputation</th>
+      <th>Alignment</th>
+      <th>Level total</th>
+      <th>Hpmax</th>
+      <th>Hpcurrent</th>
+      <th>Strength</th>
+      <th>Dexterity</th>
+      <th>Constitution</th>
+      <th>Intelligence</th>
+      <th>Wisdom</th>
+      <th>Charisma</th>
+      <th>Blood deriviation</th>
+      <th>Blood strength</th>
+      <th>Blood score</th>
+      <th>Location</th>
+      <th>Trainedthisround</th>
+      <th>Isalieutenant</th>
+      <th>Isallowed</th>
+      <th>Roundscarriedmaxrp</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @characters.each do |character| %>
+      <tr>
+        <td><%= character.id %></td>
+        <td><%= character.name %></td>
+        <td><%= character.abbrevation %></td>
+        <td><%= character.description %></td>
+        <td><%= character.reputation %></td>
+        <td><%= character.alignment %></td>
+        <td><%= character.level_total %></td>
+        <td><%= character.hpmax %></td>
+        <td><%= character.hpcurrent %></td>
+        <td><%= character.strength %></td>
+        <td><%= character.dexterity %></td>
+        <td><%= character.constitution %></td>
+        <td><%= character.intelligence %></td>
+        <td><%= character.wisdom %></td>
+        <td><%= character.charisma %></td>
+        <td><%= character.blood_deriviation_id %></td>
+        <td><%= character.blood_strength %></td>
+        <td><%= character.blood_score %></td>
+        <td><%= character.location_id %></td>
+        <td><%= character.trainedThisRound %></td>
+        <td><%= character.isALieutenant %></td>
+        <td><%= character.isAllowed %></td>
+        <td><%= character.roundsCarriedMaxRP %></td>
+        <td><%= link_to 'Show', character %></td>
+        <td><%= link_to 'Edit', edit_character_path(character) %></td>
+        <td><%= link_to 'Destroy', character, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Character', new_character_path %>

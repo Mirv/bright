@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id:</strong>
+  <%= @province.id %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @province.name %>
+</p>
+
+<p>
+  <strong>Level:</strong>
+  <%= @province.level %>
+</p>
+
+<p>
+  <strong>Source:</strong>
+  <%= @province.source %>
+</p>
+
+<%= link_to 'Edit', edit_province_path(@province) %> |
+<%= link_to 'Back', provinces_path %>

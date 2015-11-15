@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Holding:</strong>
+  <%= @holding.holding_id %>
+</p>
+
+<p>
+  <strong>Leve:</strong>
+  <%= @holding.leve %>
+</p>
+
+<p>
+  <strong>Bastionlevel:</strong>
+  <%= @holding.bastionLevel %>
+</p>
+
+<p>
+  <strong>Provinceprotects:</strong>
+  <%= @holding.provinceProtects %>
+</p>
+
+<p>
+  <strong>Visibility:</strong>
+  <%= @holding.visibility %>
+</p>
+
+<p>
+  <strong>Contested:</strong>
+  <%= @holding.contested %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @holding.name %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @holding.type %>
+</p>
+
+<p>
+  <strong>Originalname:</strong>
+  <%= @holding.originalName %>
+</p>
+
+<p>
+  <strong>Ruledupthisturn:</strong>
+  <%= @holding.ruledUpThisTurn %>
+</p>
+
+<p>
+  <strong>Rpexpenditurethisturn:</strong>
+  <%= @holding.rpExpenditureThisTurn %>
+</p>
+
+<p>
+  <strong>Gpexpenditurethisturn:</strong>
+  <%= @holding.gpExpenditureTHisTUrn %>
+</p>
+
+<%= link_to 'Edit', edit_holding_path(@holding) %> |
+<%= link_to 'Back', holdings_path %>

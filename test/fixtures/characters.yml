@@ -1,0 +1,51 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 1
+  name: MyString
+  abbrevation: MyString
+  description: MyString
+  reputation: MyString
+  alignment: MyString
+  level_total: 1
+  hpmax: 1
+  hpcurrent: 1
+  strength: 1
+  dexterity: 1
+  constitution: 1
+  intelligence: 1
+  wisdom: 1
+  charisma: 1
+  blood_deriviation_id: 1
+  blood_strength: 1
+  blood_score: 1
+  location_id: 1
+  trainedThisRound: false
+  isALieutenant: false
+  isAllowed: false
+  roundsCarriedMaxRP: 1
+
+two:
+  id: 1
+  name: MyString
+  abbrevation: MyString
+  description: MyString
+  reputation: MyString
+  alignment: MyString
+  level_total: 1
+  hpmax: 1
+  hpcurrent: 1
+  strength: 1
+  dexterity: 1
+  constitution: 1
+  intelligence: 1
+  wisdom: 1
+  charisma: 1
+  blood_deriviation_id: 1
+  blood_strength: 1
+  blood_score: 1
+  location_id: 1
+  trainedThisRound: false
+  isALieutenant: false
+  isAllowed: false
+  roundsCarriedMaxRP: 1

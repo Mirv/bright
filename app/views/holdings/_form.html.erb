@@ -1,0 +1,65 @@
+<%= form_for(@holding) do |f| %>
+  <% if @holding.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@holding.errors.count, "error") %> prohibited this holding from being saved:</h2>
+
+      <ul>
+      <% @holding.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :holding_id %><br>
+    <%= f.number_field :holding_id %>
+  </div>
+  <div class="field">
+    <%= f.label :leve %><br>
+    <%= f.number_field :leve %>
+  </div>
+  <div class="field">
+    <%= f.label :bastionLevel %><br>
+    <%= f.number_field :bastionLevel %>
+  </div>
+  <div class="field">
+    <%= f.label :provinceProtects %><br>
+    <%= f.check_box :provinceProtects %>
+  </div>
+  <div class="field">
+    <%= f.label :visibility %><br>
+    <%= f.number_field :visibility %>
+  </div>
+  <div class="field">
+    <%= f.label :contested %><br>
+    <%= f.check_box :contested %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :type %><br>
+    <%= f.number_field :type %>
+  </div>
+  <div class="field">
+    <%= f.label :originalName %><br>
+    <%= f.text_field :originalName %>
+  </div>
+  <div class="field">
+    <%= f.label :ruledUpThisTurn %><br>
+    <%= f.check_box :ruledUpThisTurn %>
+  </div>
+  <div class="field">
+    <%= f.label :rpExpenditureThisTurn %><br>
+    <%= f.number_field :rpExpenditureThisTurn %>
+  </div>
+  <div class="field">
+    <%= f.label :gpExpenditureTHisTUrn %><br>
+    <%= f.number_field :gpExpenditureTHisTUrn %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

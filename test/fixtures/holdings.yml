@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  holding_id: 1
+  leve: 1
+  bastionLevel: 1
+  provinceProtects: false
+  visibility: 1
+  contested: false
+  name: MyString
+  type: 1
+  originalName: MyString
+  ruledUpThisTurn: false
+  rpExpenditureThisTurn: 1
+  gpExpenditureTHisTUrn: 1
+
+two:
+  holding_id: 1
+  leve: 1
+  bastionLevel: 1
+  provinceProtects: false
+  visibility: 1
+  contested: false
+  name: MyString
+  type: 1
+  originalName: MyString
+  ruledUpThisTurn: false
+  rpExpenditureThisTurn: 1
+  gpExpenditureTHisTUrn: 1
